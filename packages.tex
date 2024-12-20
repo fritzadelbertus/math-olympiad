@@ -1,0 +1,35 @@
+% ===== Setup Font =====
+\usepackage[sfdefault,lf]{carlito}
+\usepackage[T1]{fontenc}
+\renewcommand*\oldstylenums[1]{\carlitoOsF #1}
+
+% ==== Import Math Packages =====
+\usepackage{amsmath, amssymb, amsthm}
+\usepackage{mathtools}
+
+% ==== Import Styling Packages =====
+\usepackage{enumitem}
+\usepackage[pages=some, placement=bottom]{background}
+\usepackage{moresize}
+\usepackage{relsize}
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,allcolors=blue}
+\usepackage{hypcap}
+\usepackage{verbatim}
+\usepackage[normalem]{ulem}
+
+\usepackage{hyperref}
+
+% ==== Custom Declarations =====
+\DeclarePairedDelimiter\abs{\lvert}{\rvert}
+\DeclarePairedDelimiter\floor{\lfloor}{\rfloor}
+\DeclarePairedDelimiter\cic{[ }{] }
+\DeclarePairedDelimiter\oic{( }{] }
+\DeclarePairedDelimiter\cio{[ }{) }
+\DeclarePairedDelimiter\oio{( }{) }
+\DeclarePairedDelimiter\set{\{ }{\} }
+\DeclarePairedDelimiter\brk{(}{)}
+\newcommand{\drv}[2]{\frac{d}{d#1}\brk*{#2}}
+\newcommand{\drvL}[2]{D_{#1}\brk*{#2}}
+\newcommand{\ds}{\displaystyle}
+\newcommand{\eval}[3]{\left.\brk*{#1}\right\rvert_{#2}^{#3}}
